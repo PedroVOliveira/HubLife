@@ -1,5 +1,6 @@
 <?php get_header();?>
-    <h1>hello</h1>
-    <p>Hello two</p>
+    <div class="container">
+        <h1>Hello</h1>
+    </div>
 <?php get_footer();?>
 

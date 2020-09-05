@@ -9,3 +9,10 @@
     <?php wp_head();?>
 </head>
 <body>
+<header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#"></a></li>
+        </ul>
+    </nav>
+</header>

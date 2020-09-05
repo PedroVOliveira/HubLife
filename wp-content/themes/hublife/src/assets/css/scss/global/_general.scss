@@ -1,7 +1,26 @@
+body,html {
+    width:100vw;
+    height:100vh;    
+}
+
 h1,h2,h3,h4,h5 {
     font-family:'Montserrat',sans-serif!important;   
 }
 
 li,p,span,strong,small {
     font-family:'Lato',sans-serif!important;
+}
+
+
+.container {
+    max-width:968px;
+    margin:0 auto;
+}
+
+
+@media (max-width:748px) {
+    .container {
+        width:90vw;
+        max-width:auto;
+    }
 }
