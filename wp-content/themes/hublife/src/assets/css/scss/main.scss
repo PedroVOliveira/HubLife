@@ -1,3 +1,17 @@
 // Reset
+@import './global/colors';
+@import './global/fonts';
+@import './global/general';
 @import './global/reset';
+
+// Sections
 @import './sections/header';
+
+body {
+    
+}
+h1 {
+    color:$pink;
+    font-weight:600;
+    font-size:1.8rem;
+}
