@@ -1,16 +1,48 @@
 header {
+    
     nav {
+        height:80px;
+        display:flex;
+        align-items:center;
+        background:white;
+        width:100vw;
+
         .container {
+            display:grid;
+            grid-template-columns:1fr 3fr 1fr;
             
-            img {
+            
+            .navbar-img {
+                
+                img {
+
+                }
 
             }
 
             ul {
+                display:flex;
+                align-items:center;
+                justify-content:flex-end;
+                margin-top:10px;
+                
                 li {
-                    a {
+                    margin:0 14px;
 
+                    a {
+                        font-family:'Montserrat',sans-serif!important;
+                        font-weight:500;
                     }
+                }
+            }
+
+            .navbar-button {
+                display:flex;
+                align-items:center;
+                margin-top:10px;
+                a {
+
+                    @include pinkLargeButton();
                 }
             }
         }

@@ -7,13 +7,22 @@ h1,h2,h3,h4,h5 {
     font-family:'Montserrat',sans-serif!important;   
 }
 
-li,p,span,strong,small {
+h3 {
+    color:$pink;
+}
+
+li,p,span,strong,small,a {
     font-family:'Lato',sans-serif!important;
+    color:$blackBlue;
+}
+
+a {
+    text-decoration:none;
 }
 
 
 .container {
-    max-width:968px;
+    max-width:1196px;
     margin:0 auto;
 }
 

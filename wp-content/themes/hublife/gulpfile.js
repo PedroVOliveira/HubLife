@@ -36,19 +36,19 @@ function gulpJS() {
 // gulp.task('mainjs',gulpJS);
 exports.gulpJS = gulpJS;
 
-// function pluginJS() {
-//     return gulp
-//     .src(
-//         [
-//             'src/js/plugins/*.js'
-//         ])
-//     .pipe(concat('plugins.js'))
-//     .pipe(gulp.dest('js/'))
-//     .pipe(browserSync.stream())
-// }
+function pluginJS() {
+    return gulp
+    .src(
+        [
+            'src/assets/js/plugins/*.js'
+        ])
+    .pipe(concat('plugins.js'))
+    .pipe(gulp.dest('src/dist/plugins/'))
+    .pipe(browserSync.stream())
+}
 
 // gulp.task('pluginjs',pluginJS);
-// exports.pluginJS = pluginJS; 
+exports.pluginJS = pluginJS; 
 
 function browser() {
     browserSync.init({
@@ -62,7 +62,7 @@ exports.browser = browser;
 function watch() {
     // injeta os arquivos css no sync
     gulp.watch('src/assets/css/scss/**/*.scss',compilerSass)
-    // gulp.watch('src/js/plugins/**/*.js', pluginJS)
+    gulp.watch('src/js/plugins/**/*.js', pluginJS)
     gulp.watch('src/assets/js/main/**/*.js', gulpJS).on('change',browserSync.reload);
     // para o PHP
     gulp.watch(['*.php','./**/*.php']).on('change',browserSync.reload);
@@ -74,4 +74,4 @@ function watch() {
 exports.watch = watch;
 
 // Tarefa padrão. Executa ao mesmo tempo as duas tarefas pluginJS
-exports.default = gulp.parallel(watch, browser, compilerSass, gulpJS );
+exports.default = gulp.parallel(watch, browser, compilerSass, gulpJS,pluginJS );

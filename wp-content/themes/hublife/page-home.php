@@ -1,6 +1,12 @@
+<?php
+// Template Name: Home
+?>
+
 <?php get_header();?>
-    <div class="container">
-        <h1>Hello</h1>
-    </div>
+    <?php if(have_posts()): while(have_posts()) : the_post();?>
+
+    
+
+    <?endwhile; endif;?>
 <?php get_footer();?>
 

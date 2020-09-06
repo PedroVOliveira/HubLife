@@ -3,15 +3,13 @@
 @import './global/fonts';
 @import './global/general';
 @import './global/reset';
+@import './global/mixins';
 
 // Sections
 @import './sections/header';
-
-body {
-    
-}
-h1 {
-    color:$pink;
-    font-weight:600;
-    font-size:1.8rem;
-}
+@import './sections/spotlight';
+@import './sections/services';
+@import './sections/about';
+@import './sections/video';
+@import './sections/blog';
+@import './sections/map';
