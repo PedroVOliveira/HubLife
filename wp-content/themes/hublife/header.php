@@ -11,7 +11,7 @@
 </head>
 <body>
 <header>
-    <nav class="navbar">
+    <nav class="navbar ">
         <div class="container">
             <div class="navbar-img">
                 <img src="<?php bloginfo('template_url');?>/src/assets/img/logo.png" alt="hublife">
@@ -23,8 +23,8 @@
                 );
                 wp_nav_menu( $args );
             ?>
-            <div class="navbar-button">
-                <a href="#">Solicite um Orçamento</a>
+            <div class="navbar-button js">
+                <a href="#about">Solicite um Orçamento</a>
             </div>
         </div>
     </nav>

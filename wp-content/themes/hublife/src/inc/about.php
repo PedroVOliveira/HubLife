@@ -1,42 +1,32 @@
 <section id="about">
     <div class="container">
         <div class="about-content">
-            <h2>Nossos Diferenciais</h2>
+            <h2><?php the_field('about_differentials');?></h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Porro magni odio, dolor sint impedit, aliquam nostrum quo nesciunt numquam ut ipsa aspernatur
+               <?php the_field('about_content');?>
             </p>
             <ul>
-                <li>
-                    <i class="fas fa-check"></i> Rápido Atendimento
-                </li>
-                <li>
-                    <i class="fas fa-check"></i> Assistência de excelência
-                </li>
-                <li>
-                    <i class="fas fa-check"></i> Respeitamos os prazos
-                </li>
-                <li>
-                    <i class="fas fa-check"></i> Conhecimento
-                </li>
+                <?php if(have_rows('about_diferentials_items')): while(have_rows('about_diferentials_items')): the_row();?>
+                    <li>
+                        <i class="fas fa-check"></i> <?php the_sub_field('about_items');?>
+                    </li>
+                <?php endwhile; endif;?>
             </ul>
-            <a href="#">Saiba mais</a>
+            <a href="#"><?php the_field('about_link_label');?></a>
         </div>
         <div class="about-img">
-            <img src="<?php bloginfo('template_url');?>/src/assets/img/sessao3-1-borda.png" alt="Diferenciais"/>
+            <img src="<?php the_field('about_image');?>" alt="Diferenciais"/>
         </div>
         <div class="about-excelent-services">
-            <h2>Entregando excelência em  cada atendimento</h2>
+            <h2><?php the_field('about_excelent_title');?></h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Porro magni odio, dolor sint impedit, aliquam nostrum quo nesciunt numquam ut ipsa aspernatur
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Porro magni odio, dolor sint impedit, aliquam nostrum quo nesciunt numquam ut ipsa aspernatur
+                <?php the_field('about_excelent_content');?>
             </p>
-            <a href="#">Saiba mais</a>
+            <a href="#"><?php the_field('about_link_label');?></a>
         </div>
         <div class="about-excelent-img">
             <img src="<?php bloginfo('template_url');?>/src/assets/img/sessao3-2-borda.png" alt="Execelencia"/>
         </div>
     </div>
 </section>
+
