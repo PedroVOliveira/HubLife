@@ -1,1 +1,1 @@
-"use strict";console.log("teste23211"),console.log("testeando internal");
+"use strict";console.log("teste23211"),console.log("testeando internal"),$(".spot").owlCarousel({loop:!0,margin:10,nav:!1,dots:!1,responsive:{0:{items:1},600:{items:1},1e3:{items:1}}});

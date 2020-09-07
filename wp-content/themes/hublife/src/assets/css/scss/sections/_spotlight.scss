@@ -1,2 +1,46 @@
 section#spotlight {
+    background:url('../../assets/img/background.png') no-repeat;
+    height:559px;
+    padding-top:100px;
+    .container {
+
+        .owl-carousel {
+
+            .item {
+                
+                display:flex;
+                align-items: center;
+                
+                .spotlight-content {
+                    h2,p {
+                        color:white;
+                        margin-bottom:25px;
+                    }
+    
+                    h2 {
+                        
+                        font-weight: 600;
+                        font-size:2.6rem;
+                        
+                    }
+    
+                    p {
+                        font-size:1.2rem;
+                        font-weight: 300;
+                        line-height: 1.6rem;
+                        
+                    }
+                    
+                    a {
+                        @include pinkLargeButton();
+                    }
+
+                }
+                    
+                img {
+                    width:auto!important;
+                }
+            }
+        }
+    }
 }
