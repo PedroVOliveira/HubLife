@@ -7,6 +7,7 @@
 
     <?php include('src/inc/spotlight.php');?>
     <?php include('src/inc/services.php');?>
+    <?php include('src/inc/about.php');?>
 
     <?endwhile; endif;?>
 <?php get_footer();?>
