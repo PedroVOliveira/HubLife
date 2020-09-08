@@ -9,6 +9,8 @@
     <?php include('src/inc/services.php');?>
     <?php include('src/inc/about.php');?>
     <?php include('src/inc/video.php');?>
+    <?php include('src/inc/blog.php');?>
+    <?php include('src/inc/map.php');?>
 
     <?endwhile; endif;?>
 <?php get_footer();?>

@@ -1,0 +1,35 @@
+section#video {
+    background:url('../../assets/img/background.png') no-repeat;
+    height:700px;
+    margin-top:100px;
+
+    .container {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:100%;
+
+        .video-content {
+            text-align: center;
+            margin-bottom:40px;
+
+
+            h2,span {
+                color:white;
+            }
+
+            h2 {
+                color:white;
+                font-size:2.4rem;
+                margin-bottom:10px;
+            }
+
+        }
+
+        .video-banner {
+            display:flex;
+            justify-content: center;
+        }
+    }
+}

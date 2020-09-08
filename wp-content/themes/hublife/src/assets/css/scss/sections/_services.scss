@@ -53,3 +53,22 @@ section#services {
         }
     }
 }
+
+@media (max-width:738px) {
+    section#services{
+        .container {
+
+            .services-items {
+                
+                ul {
+                    grid-template-columns: repeat(1,1fr)!important;
+
+                    li {
+                        margin:20px 0!important;
+                    }
+                }
+            }
+
+        }
+    }
+}   

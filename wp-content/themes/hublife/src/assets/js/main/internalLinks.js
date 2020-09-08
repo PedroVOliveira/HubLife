@@ -20,8 +20,6 @@ function internalLinks(){
         linksInternos.forEach((link)=>{
             link.addEventListener('click',scrollToSection);
         })
-        console.log(linksInternos);
-
         
 }
 

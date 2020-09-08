@@ -1,6 +1,72 @@
 section#blog {
-    
-    .container {
+    margin-top:100px;
 
+    .container {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        .blog-header {
+            margin-bottom:40px;
+            
+            h2 {
+                font-size:2.0rem;
+            }
+        }
+
+        .blog-posts {
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+
+            article {
+                margin:0 8px;
+            }
+
+            .blog-posts-thumb {
+                height:16rem;
+                background-repeat: no-repeat;
+                background-position: center;
+                border-radius:21px;
+                width:91%;
+
+            }
+
+            .blog-posts-content {
+
+
+                h3 {
+                    margin:12px 0;
+                }
+
+                p {
+                    line-height: 1.4rem;
+                    margin-bottom:12px;
+                }
+                
+                a {
+                    font-size:1.2rem;
+                    font-weight:500;
+                }
+
+                hr {
+                    width:100%;
+                    display:flex;
+                    justify-content: flex-start;
+                    height:3px;
+                    border:0;
+                    background:#e1e1e1;
+                }
+            }
+
+        }
+
+        .blog-link {
+            margin-top:50px;
+
+            a {
+                @include pinkLargeButton();
+            }
+        }
     }
 }

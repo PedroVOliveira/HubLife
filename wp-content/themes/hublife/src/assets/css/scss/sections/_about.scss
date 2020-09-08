@@ -23,7 +23,7 @@ section#about {
             margin-bottom:40px;
 
             li {
-                margin:10px 0;
+                margin:14px 0;
 
                 i {
                     color:$pink;
@@ -58,6 +58,22 @@ section#about {
 
         .about-excelent-img {
             grid-area:imageTwo;
+        }
+    }
+}
+
+@media (max-width:738px) {
+    section#about {
+        
+        .container {
+            grid-template-areas:
+            "content content"
+            "contentTwo contentTwo"!important;
+
+            .about-excelent-services {
+                text-align: right;
+                margin-left:0!important;
+            }
         }
     }
 }
