@@ -13,7 +13,8 @@ Você pode Saber o passo a passo de como instalar o wordpress localmente atravé
 ## Instalando o Node (caso não tenha)
 é necessário para o próximo passo ter o node instalado, caso você não tenha acesse [aqui](https://nodejs.org/en/) e baixe.
 ## Instalando o gulp Globalmente (Caso não tenha) 
-é necessário ter instalado  gulp de forma global na sua maquina, caso não tenha acesse [aqui](https://gulpjs.com/docs/en/getting-started/quick-start)
+é necessário ter instalado  gulp de forma global na sua maquina, caso não tenha acesse [aqui](https://gulpjs.com/docs/en/getting-started/quick-start).
+
 Após baixar o projeto e instalar o wordpress na sua maquina, é necessário acessar a pasta  do tema do projeto através do terminal (contido no seguinte caminho wp-content/themes/hublife)
 
 Com o caminho acessado é necessário rodar o comando `npm install` para baixar as depências do projeto.
