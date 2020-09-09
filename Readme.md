@@ -3,7 +3,7 @@
 Este projeto foi gerado com Wordpress versão 5.5.1 
 
 # Primeiro Passo:
-Para ter Acesso a esse projeto basta da um git clone no projeto.
+Para ter Acesso a esse projeto basta da um `git clone https://github.com/PedroVOliveira/HubLife.git` no projeto.
 # Segundo Passo:
 Dentro do projeto você pode acessar a pasta sql e fazer o dump do banco de dados em server de sua preferência.
 ## Instalando o Wordpress Localmente:
