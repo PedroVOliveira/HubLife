@@ -1,7 +1,7 @@
 function internalLinks(){
     const dynamicMenuWP = document.querySelector('.menu');
     dynamicMenuWP.classList.add('js');
-    const linksInternos = document.querySelectorAll('.js a[href^="#"');
+    const internalLinks = document.querySelectorAll('.js a[href^="#"');
         function scrollToSection(event){
          event.preventDefault();
          //Pega o endereço da section
@@ -9,15 +9,15 @@ function internalLinks(){
          const href = event.currentTarget.getAttribute('href');   
          const section = document.querySelector(href);
          //Indica a quantidade de pixel do topo da section
-         const topo = section.offsetTop - 100 ;
+         const top = section.offsetTop - 100 ;
          //  top: com o variavel no topo
          // behavior: faz o scroll suave; (a opção auto vai diretamenta para a página)
          window.scrollTo({
-             top:topo,
+             top:top,
              behavior: 'smooth'
          })
         }
-        linksInternos.forEach((link)=>{
+        internalLinks.forEach((link)=>{
             link.addEventListener('click',scrollToSection);
         })
         

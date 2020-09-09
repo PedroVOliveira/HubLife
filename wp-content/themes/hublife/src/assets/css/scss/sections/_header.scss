@@ -31,6 +31,7 @@ header {
                 }
             }
 
+            
             .navbar-button {
                 display:flex;
                 align-items:center;
@@ -40,7 +41,9 @@ header {
                     @include pinkLargeButton();
                 }
             }
+
         }
+
     }
 }
 
@@ -55,7 +58,12 @@ header {
             
             .navbar-button {
                 display:none!important;
+
+                a {
+                    padding:12px 10px!important;
+                }
             }
+
         }
     }
 }

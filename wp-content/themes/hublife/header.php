@@ -17,7 +17,7 @@
     <?php
         $home = get_page_by_title('home');
     ?>
-    <nav class="navbar ">
+    <nav class="navbar">
         <div class="container">
             <div class="navbar-img">
                 <a href="<?php bloginfo('link');?>/home" >

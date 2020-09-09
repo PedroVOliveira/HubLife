@@ -19,7 +19,7 @@ Após baixar o projeto e instalar o wordpress na sua maquina, é necessário ace
 
 Com o caminho acessado é necessário rodar o comando `npm install` para baixar as depências do projeto.
 
-# Quarto passo 
+# Quarto Passo: 
 Após as instalações das dependências do gulp é necessário modificar a url continda dentro do arquivo `gulpfile.js`.
 
 obs: No meu caso eu estou utilizando o [local by Flyweel](https://localwp.com/) você pode alterar para o server que você utilizar como mamp ou wamp.

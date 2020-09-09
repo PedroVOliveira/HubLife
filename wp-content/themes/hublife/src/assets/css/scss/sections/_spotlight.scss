@@ -44,6 +44,33 @@ section#spotlight {
                     width:auto!important;
                 }
             }
+
+            .owl-dots {
+                position:relative;
+                width:100%;
+                display:flex;
+                justify-content: center;
+                top:-30px;
+
+                .owl-dot {
+                    width:15px;
+                    height:15px;
+                    background-color:#bcc1c4;
+                    border-radius:25px;
+                    margin:0 4px;
+                    outline: none;
+                    transition: 0.5s;
+                    
+                    &.active {
+                        width: 35px;
+                        height: 15px;
+                        background-color: $pink;
+                        transition: 0.5s;
+                    }
+                }
+
+
+            }
         }
     }
 }
@@ -70,6 +97,10 @@ section#spotlight {
                 }
 
             }
+        }
+
+        .owl-dots {
+            top:0!important;
         }
     }
 }
