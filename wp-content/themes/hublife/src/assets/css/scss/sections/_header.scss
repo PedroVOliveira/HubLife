@@ -6,6 +6,8 @@ header {
         align-items:center;
         background:white;
         width:100vw;
+        position:fixed;
+        z-index: 99;
 
         .container {
             display:grid;
@@ -40,4 +42,38 @@ header {
             }
         }
     }
+}
+
+
+@media (max-width:737px) {
+    header {
+        nav {
+
+            ul {
+                display:none!important;
+            }
+            
+            .navbar-button {
+                display:none!important;
+            }
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    header {
+
+        nav {
+
+            .container {
+                grid-template-columns: repeat(2,1fr)!important;
+                
+                .navbar-button {
+                    display:none!important;
+                }
+            }
+            
+        }
+    }
+
 }

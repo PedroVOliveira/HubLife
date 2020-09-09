@@ -1,28 +1,32 @@
+<?php
+    $home = get_page_by_title('home');
+?>
+
 <footer>
     <div class="container">
         <div class="footer-content">
             <div class="footer-adress">
                 <span>
                     
-                    <?php the_field('footer_adress');?><br/>
-                    <?php the_field('footer_city');?>, <?php the_field('footer_cep');?>
+                    <?php the_field('footer_adress',$home);?><br/>
+                    <?php the_field('footer_city',$home);?>, <?php the_field('footer_cep');?>
                 </span>            
             </div>
             <div class="footer-contact">
                 <span>
                     Contato <br/>
-                    <?php the_field('footer_number');?>
+                    <?php the_field('footer_number',$home);?>
                 </span>
             </div>
             <div class="footer-social-media">
                 <ul>
                     <li>
-                        <a href="<?php the_field('footer_facebook');?>" target="_blank">
+                        <a href="<?php the_field('footer_facebook',$home);?>" target="_blank">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="<?php the_field('footer_instagram');?>" target="_blank">
+                        <a href="<?php the_field('footer_instagram',$home);?>" target="_blank">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </li>

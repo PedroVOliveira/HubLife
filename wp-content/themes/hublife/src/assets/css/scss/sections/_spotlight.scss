@@ -1,7 +1,9 @@
 section#spotlight {
     background:url('../../assets/img/background.png') no-repeat;
+    background-size: cover;
     height:559px;
-    padding-top:100px;
+    padding-top:140px;
+
     .container {
 
         .owl-carousel {
@@ -44,4 +46,59 @@ section#spotlight {
             }
         }
     }
+}
+
+@media (max-width:738px) {
+    section#spotlight {
+        height:450px;
+
+        .owl-carousel {
+
+            .item {
+                
+                .spotlight-content {
+                    height: 20rem;
+
+                    h2 {
+                        font-size:2.2rem!important;
+                    }
+
+                }
+
+                img {
+                    display:none!important;
+                }
+
+            }
+        }
+    }
+}
+
+
+@media(min-width:768px) and (max-width:1024px) {
+    section#spotlight {
+
+        .owl-carousel {
+
+            .item {
+                
+                .spotlight-content {
+                    height: 20rem;
+                    z-index: 20;
+
+                    h2 {
+                        font-size:2.18rem!important;
+                    }
+
+                }
+
+                img {
+                    position: relative;
+                    right:15px;
+                }
+
+            }
+        }
+    }
+
 }

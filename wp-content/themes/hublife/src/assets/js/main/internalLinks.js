@@ -9,7 +9,7 @@ function internalLinks(){
          const href = event.currentTarget.getAttribute('href');   
          const section = document.querySelector(href);
          //Indica a quantidade de pixel do topo da section
-         const topo = section.offsetTop;
+         const topo = section.offsetTop - 100 ;
          //  top: com o variavel no topo
          // behavior: faz o scroll suave; (a opção auto vai diretamenta para a página)
          window.scrollTo({

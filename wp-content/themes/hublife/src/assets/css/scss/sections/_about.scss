@@ -69,11 +69,53 @@ section#about {
             grid-template-areas:
             "content content"
             "contentTwo contentTwo"!important;
+            
+            h2 {
+                font-size:2.2rem!important;
+            }
+            
+            .about-content {
+                margin-top:0!important;
+
+            }
 
             .about-excelent-services {
                 text-align: right;
                 margin-left:0!important;
+                margin-top:80px!important;
             }
+
+            img {
+                display:none!important;
+            }
+        }
+    }
+}
+
+
+@media(min-width:768px) and (max-width:1024px) {
+    section#about {
+
+        .about-content,.about-img {
+            margin-bottom:80px;
+        }
+
+        .about-content,.about-excelent-services {
+            
+            h2 {
+                font-size:2.2rem!important;
+            }
+        }
+
+        .about-img,.about-excelent-img {
+            display:flex;
+            align-items: center;
+            margin-bottom:40px;
+        }
+
+        img {
+            width:100%!important;
+            margin-bottom:40px;
         }
     }
 }
