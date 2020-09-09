@@ -36,6 +36,15 @@ No Arquivo `gulpfile.js` temos o seguinte trecho de código:
 
 Basta trocar a url do proxy, para a url onde você vai acessar o projeto( ex: localhost/hublife)
 
+# Quinto passo:
+
+Com tudo instalado e o projeto funcionando com o gulp, para acessar o adminstrador basta, usar as seguintes credenciais.
+
+`
+    login: user.convidado
+    senha: convidado12345
+`
+
 # O Projeto
 ![App UI](/app.png)
 
